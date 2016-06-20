@@ -6,20 +6,20 @@ use phpunit\framework\TestCase;
 
 class TextTest extends TestCase
 {
-	/**
-	 * Set Up Text Object
-	 */
-	public function setUp()
-	{
-		$this->text = new Text;
-	}
+    /**
+     * Set Up Text Object
+     */
+    public function setUp()
+    {
+        $this->text = new Text;
+    }
 
-	/**
-	 * Test Content Length
-	 */
+    /**
+     * Test Content Length
+     */
     public function testContentLength()
     {
-		$this->assertEquals(9, $this->text->getLength());
+        $this->assertEquals(9, $this->text->getLength());
     }
 
     /**
@@ -27,7 +27,7 @@ class TextTest extends TestCase
      */
     public function testAddPrefixAndPostfix()
     {
-    	$this->text->addPrefixAndPostfix('prefix', 'postfix');
-    	$this->assertEquals(22, $this->text->getLength());
+        $this->text->addPrefixAndPostfix('prefix', 'postfix');
+        $this->assertEquals(22, $this->text->getLength());
     }
 }
