@@ -4,6 +4,9 @@ require 'vendor/autoload.php';
 
 use phpunit\framework\TestCase;
 
+/**
+ * TextTest
+ */
 class TextTest extends TestCase
 {
     /**
